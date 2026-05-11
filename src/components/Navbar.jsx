@@ -25,35 +25,23 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
           <div className="relative">
             <button
               onClick={() => setShowLanguageMenu(!showLanguageMenu)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+              className={`flex items-center gap-1 px-3 py-1.5 rounded-full border shadow-sm transition-all duration-300 ${
                 isDark
-                  ? "bg-slate-700 hover:bg-slate-600"
-                  : "bg-slate-600 hover:bg-slate-500"
+                  ? "bg-slate-800 border-slate-700 text-white hover:bg-slate-700"
+                  : "bg-white border-slate-200 text-slate-900 hover:bg-slate-50"
               }`}
             >
               <span className="text-lg">
                 {languages.find((l) => l.code === language)?.flag}
               </span>
-              <span>{languages.find((l) => l.code === language)?.name}</span>
-              <svg
-                className={`w-4 h-4 transition-transform duration-300 ${showLanguageMenu ? "rotate-180" : ""}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
             </button>
 
             {showLanguageMenu && (
               <div
-                className={`absolute right-0 mt-2 w-44 rounded-lg shadow-2xl overflow-hidden z-50 ${
-                  isDark ? "bg-slate-700" : "bg-slate-600"
+                className={`absolute right-0 mt-3 w-44 rounded-3xl border shadow-2xl overflow-hidden z-50 ${
+                  isDark
+                    ? "bg-slate-900 border-slate-700"
+                    : "bg-white border-slate-200"
                 }`}
               >
                 {languages.map((lang) => (
@@ -63,21 +51,21 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
                       setLanguage(lang.code);
                       setShowLanguageMenu(false);
                     }}
-                    className={`w-full text-left px-4 py-3 flex items-center gap-2 transition-all duration-200 ${
+                    className={`w-full text-left px-4 py-3 flex items-center gap-3 transition-all duration-200 ${
                       language === lang.code
                         ? isDark
                           ? "bg-slate-800 text-white"
-                          : "bg-slate-700 text-white"
+                          : "bg-slate-100 text-slate-900"
                         : isDark
-                          ? "hover:bg-slate-800"
-                          : "hover:bg-slate-700"
+                          ? "text-slate-200 hover:bg-slate-800"
+                          : "text-slate-700 hover:bg-slate-50"
                     }`}
                   >
                     <span className="text-lg">{lang.flag}</span>
                     <span className="font-medium">{lang.name}</span>
                     {language === lang.code && (
                       <svg
-                        className="w-4 h-4 ml-auto"
+                        className="w-4 h-4 ml-auto text-emerald-400"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -95,12 +83,12 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
           </div>
 
           <div
-            className="relative inline-flex items-center w-14 h-7 rounded-full p-0.5 transition-colors duration-300 cursor-pointer"
+            className="relative inline-flex items-center w-12 h-6 rounded-full p-0.5 transition-colors duration-300 cursor-pointer"
             style={{ backgroundColor: isDark ? "#334155" : "#cbd5e1" }}
             onClick={() => setIsDark(!isDark)}
           >
             <div
-              className={`absolute w-6 h-6 rounded-full transition-all duration-300 flex items-center justify-center ${
+              className={`absolute w-5 h-5 rounded-full transition-all duration-300 flex items-center justify-center ${
                 isDark ? "right-0.5 bg-slate-700" : "left-0.5 bg-white"
               }`}
             >
