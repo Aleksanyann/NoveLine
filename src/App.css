@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  font-family: "Jost", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(15, 23, 42, 0.12), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #0f172a;
+}
+
+html.dark {
+  background:
+    radial-gradient(circle at top, rgba(15, 23, 42, 0.5), transparent 28%),
+    linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  color: #f1f5f9;
+}
