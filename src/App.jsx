@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProductPage from "./components/ProductPage";
+import jacketRedImage from "./assets/image.png";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
@@ -80,7 +81,7 @@ export default function App() {
         title: "Leather Jacket",
         colors: {
           Red: [
-            "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=800&q=80",
+            jacketRedImage,
             "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
           ],
           Black: [

@@ -1,8 +1,14 @@
-export default function Footer({ t }) {
+export default function Footer({ t, isDark }) {
   return (
-    <footer className="border-t border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 py-6 transition-colors duration-300">
+    <footer
+      className="border-t py-6 transition-colors duration-300"
+      style={{
+        backgroundColor: isDark ? "#1F2937" : "#4B5563",
+        borderColor: isDark ? "#374151" : "#6B7280",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-slate-600 dark:text-slate-400">
+        <p className="text-sm text-slate-200">
           {t?.follow || "Follow us on social media"}
         </p>
 
@@ -11,7 +17,7 @@ export default function Footer({ t }) {
             href="https://www.instagram.com/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center text-slate-800 dark:text-slate-200 transition hover:text-slate-950 dark:hover:text-white"
+            className="inline-flex items-center text-slate-200 transition hover:text-white"
             aria-label="Instagram"
           >
             <svg
@@ -31,7 +37,7 @@ export default function Footer({ t }) {
             href="https://www.tiktok.com/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center text-slate-800 dark:text-slate-200 transition hover:text-slate-950 dark:hover:text-white"
+            className="inline-flex items-center text-slate-200 transition hover:text-white"
             aria-label="TikTok"
           >
             <svg

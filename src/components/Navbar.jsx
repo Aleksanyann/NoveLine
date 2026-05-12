@@ -10,7 +10,11 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
 
   return (
     <nav
-      className={`${isDark ? "bg-slate-800 border-slate-700" : "bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900"} text-white shadow-2xl transition-colors duration-300 border-b`}
+      className="text-white shadow-2xl transition-colors duration-300 border-b"
+      style={{
+        backgroundColor: isDark ? "#1F2937" : "#4B5563",
+        borderColor: isDark ? "#374151" : "#6B7280",
+      }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
         <a
@@ -62,7 +66,9 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
                     }`}
                   >
                     <span className="text-lg">{lang.flag}</span>
+
                     <span className="font-medium">{lang.name}</span>
+
                     {language === lang.code && (
                       <svg
                         className="w-4 h-4 ml-auto text-emerald-400"
@@ -84,7 +90,7 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
 
           <div
             className="relative inline-flex items-center w-12 h-6 rounded-full p-0.5 transition-colors duration-300 cursor-pointer"
-            style={{ backgroundColor: isDark ? "#334155" : "#cbd5e1" }}
+            style={{ backgroundColor: isDark ? "#c1cee0" : "#cbd5e1" }}
             onClick={() => setIsDark(!isDark)}
           >
             <div
@@ -109,6 +115,7 @@ export default function Navbar({ isDark, setIsDark, language, setLanguage }) {
                   className="h-3.5 w-3.5 text-yellow-500"
                 >
                   <circle cx="12" cy="12" r="5" />
+
                   <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6m-15.78 7.78l4.24-4.24m5.08-5.08l4.24-4.24" />
                 </svg>
               )}
