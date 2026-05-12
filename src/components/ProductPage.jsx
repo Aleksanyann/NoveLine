@@ -58,27 +58,41 @@ export default function ProductPage({
             {product.title}
           </h1>
 
-          <div className="flex gap-3 mb-5">
-            {Object.keys(product.colors).map((color) => (
-              <button
-                key={color}
-                onClick={() => {
-                  setSelectedColor(color);
-                  setCurrentImage(0);
-                }}
-                className={`w-10 h-10 rounded-full border-4 transition-all duration-200 ${
-                  selectedColor === color
-                    ? "border-blue-500 ring-2 ring-blue-500"
-                    : "border-gray-300"
-                }`}
-                style={{ backgroundColor: color.toLowerCase() }}
-              />
-            ))}
+          <div className="mb-5">
+            <h2 className="text-lg font-semibold mb-3 text-slate-900 dark:text-white">
+              Best color options
+            </h2>
+            <div className="flex items-center gap-3">
+              {(product.bestColors || Object.keys(product.colors)).map(
+                (color) => (
+                  <span
+                    key={color}
+                    aria-label={color}
+                    title={color}
+                    className="w-10 h-10 rounded-full border-2 border-slate-300 dark:border-slate-600 shadow-sm"
+                    style={{ backgroundColor: color.toLowerCase() }}
+                  />
+                ),
+              )}
+            </div>
           </div>
 
-          <p className="text-slate-700 dark:text-slate-300">
-            {product.description}
-          </p>
+          <div className="mt-4">
+            {Array.isArray(product.description) ? (
+              product.description.map((line, index) => (
+                <p
+                  key={index}
+                  className="text-slate-700 dark:text-slate-300 mb-2"
+                >
+                  {line}
+                </p>
+              ))
+            ) : (
+              <p className="text-slate-700 dark:text-slate-300">
+                {product.description}
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>

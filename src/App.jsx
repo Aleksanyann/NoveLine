@@ -67,7 +67,12 @@ export default function App() {
             "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
           ],
         },
-        description: "Modern sneakers with comfortable design.",
+        bestColors: ["Pink", "Blue", "White", "Gray", "Black"],
+        description: [
+          "Modern sneakers with comfortable design.",
+          "Breathable mesh upper.",
+          "Cushioned sole for all-day comfort.",
+        ],
       },
 
       {
@@ -83,7 +88,14 @@ export default function App() {
             "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
           ],
         },
-        description: "Stylish leather jacket for any occasion.",
+        bestColors: ["Black", "Charcoal", "Burgundy", "Brown", "Olive"],
+        description: [
+          "Խնամքի   պայմաններ",
+          "Modern sneakers with comfortable design.",
+          "Breathable mesh upper.",
+          "Handcrafted leather with premium details.",
+          "Cushioned sole for all-day comfort.",
+        ],
       },
 
       {
@@ -99,7 +111,12 @@ export default function App() {
             "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
           ],
         },
-        description: "Classic baseball cap with adjustable fit.",
+        bestColors: ["Gray", "Navy", "White", "Beige", "Black"],
+        description: [
+          "Modern sneakers with comfortable design.",
+          "Breathable mesh upper.",
+          "Cushioned sole for day comfort.",
+        ],
       },
     ],
     [],
