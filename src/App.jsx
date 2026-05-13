@@ -75,9 +75,29 @@ export default function App() {
           "Cushioned sole for all-day comfort.",
         ],
       },
-
       {
         id: 2,
+        title: "White Sneakers",
+        colors: {
+          Pink: [
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
+          ],
+          Blue: [
+            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+        bestColors: ["Pink", "Blue", "White", "Green", "Black"],
+        description: [
+          "Modern sneakers with comfortable design.",
+          "Breathable mesh upper.",
+          "Cushioned sole for all-day comfort.",
+        ],
+      },
+
+      {
+        id: 3,
         title: "Leather Jacket",
         colors: {
           Red: [
@@ -100,7 +120,7 @@ export default function App() {
       },
 
       {
-        id: 3,
+        id: 4,
         title: "Baseball Cap",
         colors: {
           Gray: [

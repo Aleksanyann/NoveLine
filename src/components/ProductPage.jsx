@@ -86,10 +86,6 @@ export default function ProductPage({
                 (color) => (
                   <button
                     key={color}
-                    onClick={() => {
-                      setSelectedColor(color);
-                      setCurrentImage(0);
-                    }}
                     aria-label={color}
                     title={color}
                     className={`w-10 h-10 rounded-full border-2 shadow-md transition-all duration-300 ${
