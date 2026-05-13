@@ -34,7 +34,7 @@ export default function Footer({ t, isDark }) {
           </a>
 
           <a
-            href="https://www.tiktok.com/"
+            href="https://www.tiktok.com/@noveelinee"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center text-slate-200 transition hover:text-white"
