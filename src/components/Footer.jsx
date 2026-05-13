@@ -14,7 +14,7 @@ export default function Footer({ t, isDark }) {
 
         <div className="flex flex-wrap items-center gap-4">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/noveelinee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center text-slate-200 transition hover:text-white"
