@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProductPage from "./components/ProductPage";
-import jacketRedImage from "./assets/image.png";
+import bag from "./assets/prr.png";
 
 export default function App() {
   const [isDark, setIsDark] = useState(false);
@@ -60,12 +60,10 @@ export default function App() {
         title: "White Sneakers",
         colors: {
           Pink: [
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
-          ],
-          Blue: [
-            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698330/photo_10_2026-05-13_22-49-46_aubjqd.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_12_2026-05-13_22-49-46_fudp2a.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698330/photo_9_2026-05-13_22-49-46_cfq9vi.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_11_2026-05-13_22-49-46_czfshn.jpg",
           ],
         },
         bestColors: ["Pink", "Blue", "White", "Gray", "Black"],
@@ -80,12 +78,10 @@ export default function App() {
         title: "White Sneakers",
         colors: {
           Pink: [
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
-          ],
-          Blue: [
-            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_5_2026-05-13_22-49-46_s0yea7.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_6_2026-05-13_22-49-46_mm3jdu.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698327/photo_8_2026-05-13_22-49-46_tgb5pw.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698327/photo_7_2026-05-13_22-49-46_g5oosh.jpg",
           ],
         },
         bestColors: ["Pink", "Blue", "White", "Green", "Black"],
@@ -101,12 +97,11 @@ export default function App() {
         title: "Leather Jacket",
         colors: {
           Red: [
-            jacketRedImage,
-            "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
-          ],
-          Black: [
-            "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_3_2026-05-13_22-37-02_kxu3cp.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698327/photo_4_2026-05-13_22-37-02_pkq9oy.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_2_2026-05-13_22-37-02_wdonki.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_1_2026-05-13_22-37-02_rawkih.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_5_2026-05-13_22-37-02_bnc0ch.jpg",
           ],
         },
         bestColors: ["Black", "Charcoal", "Burgundy", "Brown", "Olive"],
@@ -118,18 +113,34 @@ export default function App() {
           "Cushioned sole for all-day comfort.",
         ],
       },
-
       {
         id: 4,
+        title: "Leather Jacket",
+        colors: {
+          Red: [
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_13_2026-05-13_22-49-46_cm6w4b.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_15_2026-05-13_22-49-46_anfct1.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_14_2026-05-13_22-49-46_evx66n.jpg",
+          ],
+        },
+        bestColors: ["Black", "Charcoal", "Burgundy", "Brown", "Olive"],
+        description: [
+          "Խնամքի   պայմաններ",
+          "Modern sneakers with comfortable design.",
+          "Breathable mesh upper.",
+          "Handcrafted leather with premium details.",
+          "Cushioned sole for all-day comfort.",
+        ],
+      },
+      {
+        id: 5,
         title: "Baseball Cap",
         colors: {
           Gray: [
-            "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=800&q=80",
-          ],
-          White: [
-            "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_2_2026-05-13_22-49-46_ainzyw.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_4_2026-05-13_22-49-46_of9vmu.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_3_2026-05-13_22-49-46_oxnfmx.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_1_2026-05-13_22-49-46_jdbacj.jpg",
           ],
         },
         bestColors: ["Gray", "Navy", "White", "Beige", "Black"],
