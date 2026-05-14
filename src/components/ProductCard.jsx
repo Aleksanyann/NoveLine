@@ -27,7 +27,7 @@ export default function ProductCard({ product, onClick, t, isDark }) {
 
         <p className="text-sm text-slate-200 mb-4">
           {t?.description ||
-            "Premium fit and quality materials for everyday wear."}
+            "Premium fit and quality materials for everyday use."}
         </p>
 
         <div
