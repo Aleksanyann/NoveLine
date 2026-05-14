@@ -57,7 +57,7 @@ export default function App() {
     () => [
       {
         id: 1,
-        title: "White Sneakers",
+        title: "Dream Case (Blue)",
         colors: {
           Pink: [
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698330/photo_10_2026-05-13_22-49-46_aubjqd.jpg",
@@ -75,7 +75,7 @@ export default function App() {
       },
       {
         id: 2,
-        title: "White Sneakers",
+        title: "Sweet heart",
         colors: {
           Pink: [
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_5_2026-05-13_22-49-46_s0yea7.jpg",
@@ -94,11 +94,11 @@ export default function App() {
 
       {
         id: 3,
-        title: "Leather Jacket",
+        title: "Mon cherie",
         colors: {
           Red: [
-            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_3_2026-05-13_22-37-02_kxu3cp.jpg",
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698327/photo_4_2026-05-13_22-37-02_pkq9oy.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_3_2026-05-13_22-37-02_kxu3cp.jpg",
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_2_2026-05-13_22-37-02_wdonki.jpg",
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_1_2026-05-13_22-37-02_rawkih.jpg",
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_5_2026-05-13_22-37-02_bnc0ch.jpg",
@@ -115,7 +115,7 @@ export default function App() {
       },
       {
         id: 4,
-        title: "Leather Jacket",
+        title: "Dream Case (Pink)",
         colors: {
           Red: [
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_13_2026-05-13_22-49-46_cm6w4b.jpg",
@@ -134,7 +134,7 @@ export default function App() {
       },
       {
         id: 5,
-        title: "Baseball Cap",
+        title: "Radiance",
         colors: {
           Gray: [
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_2_2026-05-13_22-49-46_ainzyw.jpg",
