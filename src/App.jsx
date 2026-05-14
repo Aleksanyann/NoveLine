@@ -66,7 +66,7 @@ export default function App() {
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698329/photo_11_2026-05-13_22-49-46_czfshn.jpg",
           ],
         },
-        bestColors: ["Pink", "Blue", "White", "Gray", "Black"],
+        bestColors: ["#6d96a6", "#BFD1E0", "#FDF6ED", "#F0E4D6", "#CCBAA5"],
         description: [
           "Modern sneakers with comfortable design.",
           "Breathable mesh upper.",
@@ -84,7 +84,7 @@ export default function App() {
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698327/photo_7_2026-05-13_22-49-46_g5oosh.jpg",
           ],
         },
-        bestColors: ["Pink", "Blue", "White", "Green", "Black"],
+        bestColors: ["#ECE4DB", "#C4A69B", "#B8AB9C", "#CFC8BE", "#BAB8A2"],
         description: [
           "Modern sneakers with comfortable design.",
           "Breathable mesh upper.",
@@ -104,7 +104,7 @@ export default function App() {
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_5_2026-05-13_22-37-02_bnc0ch.jpg",
           ],
         },
-        bestColors: ["Black", "Charcoal", "Burgundy", "Brown", "Olive"],
+        bestColors: ["#281E15", "#FEFFF1", "#520100", "#B8966D", "#8F775F"],
         description: [
           "Խնամքի   պայմաններ",
           "Modern sneakers with comfortable design.",
@@ -123,7 +123,7 @@ export default function App() {
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698328/photo_14_2026-05-13_22-49-46_evx66n.jpg",
           ],
         },
-        bestColors: ["Black", "Charcoal", "Burgundy", "Brown", "Olive"],
+        bestColors: ["#968C83", "#D6D2C4", "#FFF5EA", "#F7DAD9"],
         description: [
           "Խնամքի   պայմաններ",
           "Modern sneakers with comfortable design.",
@@ -143,7 +143,7 @@ export default function App() {
             "https://res.cloudinary.com/dfxrapmbv/image/upload/v1778698326/photo_1_2026-05-13_22-49-46_jdbacj.jpg",
           ],
         },
-        bestColors: ["Gray", "Navy", "White", "Beige", "Black"],
+        bestColors: ["#EDE9DD", "#ADC0C4", "#CB8B82", "#AC795A", "#3A3A3C"],
         description: [
           "Modern sneakers with comfortable design.",
           "Breathable mesh upper.",
