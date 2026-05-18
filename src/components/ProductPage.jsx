@@ -16,12 +16,12 @@ export default function ProductPage({
   const nextImage = () => setCurrentImage((currentImage + 1) % images.length);
 
   return (
-    <div className="p-4 md:p-6">
+    <div className="p-4 md:p-6" style={{ backgroundColor: "#f9f5ec" }}>
       <button
         onClick={onBack}
-        className="mb-4 text-white px-4 py-2 rounded-xl transition-colors duration-300"
+        className="mb-4 px-4 py-2 rounded-xl transition-colors duration-300 text-black"
         style={{
-          backgroundColor: isDark ? "#1F2937" : "#4B5563",
+          backgroundColor: "#e5e7eb",
         }}
       >
         {t?.back || "← Back"}
@@ -30,9 +30,11 @@ export default function ProductPage({
       <div
         className="max-w-5xl mx-auto rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2 gap-5 p-4 md:p-6 transition-colors duration-300"
         style={{
-          backgroundColor: isDark ? "#1F2937" : "#6B7280",
+          backgroundColor: "#f9f5ec",
+          border: "1px solid #e5e7eb",
         }}
       >
+        {/* IMAGE SECTION */}
         <div>
           <div className="relative mb-4">
             <img
@@ -42,14 +44,14 @@ export default function ProductPage({
 
             <button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/20 text-black p-2 rounded-full hover:bg-black/30 transition"
             >
               ←
             </button>
 
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/20 text-black p-2 rounded-full hover:bg-black/30 transition"
             >
               →
             </button>
@@ -62,7 +64,7 @@ export default function ProductPage({
                 src={image}
                 className={`w-full h-24 object-cover rounded-lg cursor-pointer transition ${
                   index === currentImage
-                    ? "ring-2 ring-white"
+                    ? "ring-2 ring-black"
                     : "opacity-80 hover:opacity-100"
                 }`}
                 onClick={() => setCurrentImage(index)}
@@ -71,13 +73,14 @@ export default function ProductPage({
           </div>
         </div>
 
+        {/* INFO SECTION */}
         <div>
-          <h1 className="text-2xl md:text-4xl font-bold mb-3 text-white">
+          <h1 className="text-2xl md:text-4xl font-bold mb-3 text-black">
             {product.title}
           </h1>
 
           <div className="mb-5">
-            <h2 className="text-lg font-semibold mb-3 text-slate-200">
+            <h2 className="text-lg font-semibold mb-3 text-black">
               Best color options
             </h2>
 
@@ -88,10 +91,11 @@ export default function ProductPage({
                     key={color}
                     aria-label={color}
                     title={color}
+                    onClick={() => setSelectedColor(color)}
                     className={`w-10 h-10 rounded-full border-2 shadow-md transition-all duration-300 ${
                       selectedColor === color
-                        ? "scale-110 border-white"
-                        : "border-slate-300"
+                        ? "scale-110 border-black"
+                        : "border-gray-400"
                     }`}
                     style={{
                       backgroundColor: color.toLowerCase(),
@@ -105,12 +109,12 @@ export default function ProductPage({
           <div className="mt-4">
             {Array.isArray(product.description) ? (
               product.description.map((line, index) => (
-                <p key={index} className="text-slate-200 mb-2 leading-relaxed">
+                <p key={index} className="text-black/70 mb-2 leading-relaxed">
                   {line}
                 </p>
               ))
             ) : (
-              <p className="text-slate-200 leading-relaxed">
+              <p className="text-black/70 leading-relaxed">
                 {product.description}
               </p>
             )}
