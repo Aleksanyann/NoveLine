@@ -144,6 +144,27 @@ export default function App() {
       },
       {
         id: 5,
+        title: "Balck Shine",
+        colors: {
+          Red: [
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1780125387/photo_2026-05-30_11-12-58_qd7abk.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1780125386/photo_2026-05-30_11-13-02_odxmkc.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1780125387/photo_2026-05-30_11-13-00_quznvd.jpg",
+            "https://res.cloudinary.com/dfxrapmbv/image/upload/v1780125386/photo_2026-05-30_11-13-06_nqg4bf.jpg",
+          ],
+        },
+        bestColors: ["#49110b", "#56483b", "#c8c2b7", "#e7e5db", "#ad9e89"],
+        description: [
+          "• Պահեք պայուսակը չոր և մաքուր վայրում՝ հեռու խոնավությունից և արևի ուղիղ ճառագայթներից։",
+          "• Չլվանա՛լ  լվացքի մեքենայով և չթրջե’լ ամբողջությամբ ջրում։",
+          "• Մաքրել միայն չոր և փափուկ կտորով",
+          "• Փոշին  մաքրեք փափուկ, չոր կամ թեթևակի խոնավ կտորով։",
+          "• Խուսափեք օծանելիքի, ալկոհոլ պարունակող միջոցների, քսուքների և այլ  քիմիական նյութերի անմիջական շփումից։",
+          "• Պահպանելիս ցանկալի է պայուսակի ներսում դնել թուղթ կամ փափուկ լցոնիչ՝ ձևը պահպանելու համար։",
+        ],
+      },
+      {
+        id: 6,
         title: "Radiance",
         colors: {
           Gray: [
