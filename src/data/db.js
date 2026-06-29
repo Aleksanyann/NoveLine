@@ -35,6 +35,32 @@ export const translations = {
 export const products = [
   {
     id: 1,
+    title: "Cloud Crystal",
+    colors: {
+      Red: [
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750333/photo_2026-06-29_20-19-53_khmgu4.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750379/photo_4_2026-06-29_20-20-06_dchzya.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750380/photo_1_2026-06-29_20-20-06_upsnya.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750379/photo_2_2026-06-29_20-20-06_szy5pn.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750379/photo_3_2026-06-29_20-20-06_bkuf2g.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782750379/photo_5_2026-06-29_20-20-06_fv5wkn.jpg",
+      ],
+    },
+    bestColors: ["#B9A292", "#DEC785", "#FAF4E5", "#E4E5DD", "#E5CCC0"],
+    description: [
+      "• Պահեք պայուսակը չոր վայրում՝ հեռու արևի ուղիղ ճառագայթներից։",
+      "• Խուսափեք ջրի, օծանելիքի, կոսմետիկ միջոցների և քիմիական նյութերի անմիջական շփումից։",
+      "• Ուլունքները մաքրեք միայն փափուկ, չոր կամ թեթևակի խոնավ կտորով։",
+      "• Մի լվացեք լվացքի մեքենայում և մի թրջեք ամբողջությամբ։",
+      "• Ներքին ատլասե կտորը մաքրեք միայն խոնավ կտորով՝ առանց ուժեղ շփելու։",
+      "• Սուր առարկաները պահեք առանձին, որպեսզի չվնասեն ատլասը և ուլունքները։",
+      "• Պահպանելիս լցրեք ներսը փափուկ թուղթ կամ կտոր, որպեսզի պայուսակը պահպանի իր ձևը։",
+      "• Պահեք փոշուց պաշտպանող  պարկի մեջ։",
+      "• Եթե պայուսակը թրջվել է, թողեք այն բնական եղանակով չորանա՝ առանց վարսահարդարիչի կամ տաքացուցիչի։",
+    ],
+  },
+  {
+    id: 2,
     title: "Balck Shine",
     colors: {
       Red: [
@@ -55,7 +81,7 @@ export const products = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Mon cherie",
     colors: {
       Red: [
@@ -78,7 +104,7 @@ export const products = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Radiance",
     colors: {
       Gray: [
@@ -100,7 +126,7 @@ export const products = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Dream Case (Blue)",
     colors: {
       Pink: [
@@ -122,7 +148,7 @@ export const products = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Dream Case (Pink)",
     colors: {
       Red: [
@@ -143,7 +169,7 @@ export const products = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Sweet heart",
     colors: {
       Pink: [
