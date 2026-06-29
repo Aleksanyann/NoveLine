@@ -87,16 +87,9 @@ export default function ProductPage({
             <div className="flex items-center gap-3 flex-wrap">
               {(product.bestColors || Object.keys(product.colors)).map(
                 (color) => (
-                  <button
+                  <span
                     key={color}
-                    aria-label={color}
-                    title={color}
-                    onClick={() => setSelectedColor(color)}
-                    className={`w-10 h-10 rounded-full border-2 shadow-md transition-all duration-300 ${
-                      selectedColor === color
-                        ? "scale-110 border-black"
-                        : "border-gray-400"
-                    }`}
+                    className="w-10 h-10 rounded-full border-2 border-gray-400 shadow-md"
                     style={{
                       backgroundColor: color.toLowerCase(),
                     }}
