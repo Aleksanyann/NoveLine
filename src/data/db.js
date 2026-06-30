@@ -35,6 +35,30 @@ export const translations = {
 export const products = [
   {
     id: 1,
+    title: "Aurora",
+    colors: {
+      Red: [
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833042/photo_2026-06-30_19-17-09_utgquu.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833074/photo_1_2026-06-30_19-17-06_yn6iqw.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833074/photo_2_2026-06-30_19-17-06_xm2hva.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833073/photo_3_2026-06-30_19-17-06_mwbfr6.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833072/photo_6_2026-06-30_19-17-06_s7yupa.jpg",
+        "https://res.cloudinary.com/dfxrapmbv/image/upload/v1782833074/photo_5_2026-06-30_19-17-06_akeadg.jpg",
+      ],
+    },
+    bestColors: ["#664e44", "#808b7f", "#FAF4e5", "#ffe8d6", "#c7c3b0"],
+    description: [
+      "• Պահեք պայուսակը փափուկ կտորե պարկի կամ առանձին տուփի մեջ՝ քերծվածքներից պաշտպանելու համար։",
+      "• Խուսափեք ջրի, անձրևի և բարձր խոնավության ազդեցությունից։",
+      "• Խուսափեք օծանելիքի, կրեմների, լաքի և այլ  քիմիական նյութերի անմիջական շփումից։",
+      "• Պայուսակը մաքրեք միայն փափուկ, չոր կամ թեթևակի խոնավ կտորով։",
+      "• Մի օգտագործեք լվացող  այլ միջոցներ։",
+      "• Խուսափեք երկար ժամանակ արևի ուղիղ ճառագայթների ազդեցությունից՝ գույնն ու փայլը պահպանելու համար։",
+      "• Պայուսակը մի ծալեք և մի սեղմեք, որպեսզի ուլունքներն ու հիմքը չձևափոխվեն։",
+    ],
+  },
+  {
+    id: 1,
     title: "Cloud Crystal",
     colors: {
       Red: [
